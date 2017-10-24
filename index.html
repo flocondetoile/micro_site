@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Le module paragraphs par l'exemple, ou la rédaction de contenu sous stéroides</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/local.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <section id="prez" data-transition="convex" data-background="images/plateform.jpg">
+					<h1 class="overlay-black">Micro site</h1>
+					<p class="overlay-black">Industrialisation par le contenu</p>
+				</section>
+
+        <section id="presentation" data-transition="convex">
+          <h2>Présentation</h2>
+          <p>Fabrice Scoyer</p>
+          <p>Freelance Drupal - <a href="http://flocondetoile.fr" target="_blank">www.flocondetoile.fr</a></p>
+          <img class="plain" width="150px" src="images/logo_flocon.png" alt="Logo Flocon de toile">
+        </section>
+
+
+        <section id="intro" data-transition="convex">
+          <h2>Micro site ?</h2>
+          <p>Créer un micro site depuis une instance Drupal 8 aussi facilement que publier un article</p>
+        </section>
+
+        <section id="solutions" data-transition="convex">
+        	<h2>Les solutions existantes</h2>
+          <ul>
+            <li>Multi-sites natif</li>
+            <li>Domain access</li>
+          </ul>
+        </section>
+
+        <section id="ideal" data-transition="convex">
+          <h2>Multi-sites idéal</h2>
+          <img src="images/usine_ideal.png" class="plain">
+        </section>
+
+        <section id="reels" data-transition="convex">
+          <h2>Multi-sites une tendance</h2>
+          <img src="images/usine_tendance.png" class="plain">
+        </section>
+
+        <section id="domain" data-transition="convex">
+          <h2>Domain access</h2>
+          <img src="images/domain.png" class="plain">
+        </section>
+
+        <section id="why" data-transition="convex">
+          <h2>Micro site : pourquoi ?</h2>
+          <ul>
+            <li>Multi-sites natif utilisé pour publier des sites "simples"</li>
+            <li>Altérations assez lourdes pour limiter les droits au niveau du backoffice</li>
+          </ul>
+        </section>
+
+        <section id="sensation" data-transition="convex" data-background="images/tank.jpg">
+          <h2 class="overlay-black">Une impression d'un marteau-piqueur face à un clou</h2>
+          <p class="fragment small overlay-white">Ou d'un tank face à une mouche</p>
+          <p class="fragment overlay-white">Et si on pouvait faire plus simple ?</p>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Simple comment ?</h2>
+          <ul>
+            <li>Accessible à des utilisateurs <em>Lambda</em> / webmestres</li>
+            <li>Pas besoin de droits avancés sur la configuration</li>
+            <li>Pas d'intervention lourde sur l'infrastructure</li>
+            <li>Utiliser au maximum les possibilités de Drupal 8, mais simplement dans le contexte d'un micro-site</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2>C'est quoi un micro site ?</h2>
+          <ul>
+            <li>Un site simple (publication essentiellement)</li>
+            <li>Utilisateurs : quelques webmestres / contributeurs</li>
+            <li>Permissions : des règles standard (80/20)</li>
+            <li>Un menu, des pages, des catégories</li>
+            <li>Une gestion d'arboresence</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex" >
+          <h2>L'exemple du multi-site sur Typo3</h2>
+          <img src="images/typo3_multisite.png" class="plain">
+        </section>
+
+        <section data-transition="convex">
+          <h2>Quelques autres avantages</h2>
+          <ul>
+            <li>Publication cross sites à portée de clics</li>
+            <li>Mêmes utilisateurs</li>
+            <li>Site building de Drupal permet de configurer sur mesure les types de micro sites (que ce soit les sites, ou les types de contenus)</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro site</h2>
+          <p><a href="https://www.drupal.org/project/micro_site" target="_blank">https://www.drupal.org/project/micro_site</a></p>
+          <ul>
+            <li>Entité Site : page d'accueil et point d'accroche pour l'url du micro site</li>
+            <li>Utilisateurs : gérés uniquement via l'entité site</li>
+            <li>Roles : Propriétaire, Gestionnaire, Contributeur, Membre</li>
+            <li>Divers : logo / slogan / email / shield / assets (@todo)</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex" data-background="images/micro_site.png">
+          <h2 class="overlay-black">Un micro site</h2>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Extension de micro site</h2>
+          <ul>
+            <li><a href="https://www.drupal.org/project/micro_menu">Micro menu</a></li>
+            <li><a href="https://www.drupal.org/project/micro_node">Micro node</a></li>
+            <li><a href="https://www.drupal.org/project/micro_user">Micro user</a></li>
+            <li><a href="https://www.drupal.org/project/micro_sso">Micro sso</a></li>
+            <li><a href="https://www.drupal.org/project/micro_contact">Micro contact</a></li>
+            <li><a href="https://www.drupal.org/project/micro_simple_sitemap">Micro simple sitemap</a></li>
+            <li><a href="https://www.drupal.org/project/micro_taxonomy (@todo)">Micro taxonomy (@todo)</a></li>
+            <li>...</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro menu</h2>
+          <p><a href="https://www.drupal.org/project/micro_menu" target="_blank">https://www.drupal.org/project/micro_menu</a></p>
+          <ul>
+            <li>Un menu dédié au micro site</li>
+            <li>Interface native de Drupal 8 pour la gestion d'un menu</li>
+            <li>Arboresence du site gérée par Drag'n Drop</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex" data-background="images/micro_menu.png">
+          <h2 class="overlay-black">Micro menu</h2>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro node</h2>
+          <p><a href="https://www.drupal.org/project/micro_node" target="_blank">https://www.drupal.org/project/micro_node</a></p>
+          <ul>
+            <li>Intègre les noeuds avec un micro site</li>
+            <li>Type de contenus pouvant être associé à un micro site</li>
+            <li>Droits spécifiques dans le contexte d'un micro site</li>
+            <li>Utilisation des <em>Grants / Access records</em></li>
+          </ul>
+        </section>
+
+        <section data-transition="convex" data-background="images/micro_node.png">
+          <h2 class="overlay-black">Micro node</h2>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro user</h2>
+          <p><a href="https://www.drupal.org/project/micro_user" target="_blank">https://www.drupal.org/project/micro_user</a></p>
+          <ul>
+            <li>Très simple, contrôle authenfication sur un micro site </li>
+            <li>Aucune configuration particulière sur l'utilisateur</li>
+            <li>Un utilisateur d'un micro-site peut ne jamais savoir qu'il s'agit d'un micro-site</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro sso</h2>
+          <p><a href="https://www.drupal.org/project/micro_sso" target="_blank">https://www.drupal.org/project/micro_sso</a></p>
+          <ul>
+            <li>Fournit un SSO light depuis le Master => micro site</li>
+            <li>Merci @pounard</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro contact</h2>
+          <p><a href="https://www.drupal.org/project/micro_contact" target="_blank">https://www.drupal.org/project/micro_contact</a></p>
+          <ul>
+            <li>Donne accès à un formulaire de contact depuis le micro site</li>
+            <li>Ou prévient l'accès à des formulaires de contact non déclarés sur le micro-site</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2>Le module micro simple sitemap</h2>
+          <p><a href="https://www.drupal.org/project/micro_simple_sitemap" target="_blank">https://www.drupal.org/project/micro_simple_sitemap</a></p>
+          <ul>
+            <li>Intégre le module simple sitemap avec les micro sites</li>
+            <li>Chaque micro site dispose de son sitemap.xml</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex" data-background="images/mur_jaune.jpg">
+          <h2 class="overlay-black">Mais comment ca marche ?</h2>
+        </section>
+
+        <section data-transition="convex">
+          <h2 class="overlay-black">Comment ca marche ?</h2>
+          <ul>
+            <li>Les modules fournissent le coeur du fonctionnement</li>
+            <li>La création des types de micro site relèvent du site building (champs, views, etc.) pour concevoir la page d'accueil</li>
+            <li>De même que pour les types de contenu activés pour les micro sites</li>
+            <li>Et ensuite place à Twig !</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex" data-background="images/mur_jaune.jpg">
+          <h2 class="overlay-black">Mais est-ce que ca marche ?</h2>
+        </section>
+
+        <section data-transition="convex" data-background="images/mur_jaune.jpg">
+          <h2 class="overlay-black">Oui</h2>
+          <h2 class="fragment overlay-white">Mais...</h2>
+        </section>
+
+        <section data-transition="convex">
+          <h2 class="overlay-black">...En version alpha car il manque</h2>
+          <ul>
+            <li>Les tests. Tout tester !!!</li>
+            <li>Encore des réglages (interdire par défaut l'accès à une route non explicitement autorisée depuis un micro site par exemple)</li>
+            <li>@todo Micro taxonomy pour avoir une couverture fonctionnelle à minima (page + menu + catégorie)</li>
+            <li>@todo des assets (css) personnalisés par site</li>
+            <li>et autres petits raffinements (micro webform, micro views, micro sitemap, selection thème, etc)</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h2 class="overlay-black">En version alpha car il manque...</h2>
+          <ul>
+            <li>La gestion du user-1 ou de la permission ByPass particulièrement pénible</li>
+            <li><a href="https://www.drupal.org/node/540008" target="_blank">[PP-1] Remove the special behavior of uid #1</a></li>
+          </ul>
+        </section>
+
+
+        <section>
+                # Merci
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
